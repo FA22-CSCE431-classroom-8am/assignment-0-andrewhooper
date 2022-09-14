@@ -3,7 +3,7 @@ require 'rails_helper'
 # Unit test for title
 RSpec.describe Book, type: :model do
   subject do	
-  	described_class.new(title: 'harry potter',author: 'filler_name', price: 10.00, published_date: '2099-01-01')
+  	described_class.new(title: 'harry potter',author: 'filler_name', price: 10.00, published_date: '2000-01-01')
   end
 
   it 'is valid with valid title' do
@@ -19,7 +19,7 @@ end
 # Unit test for author 
 RSpec.describe Book, type: :model do
   subject do	
-  	described_class.new(title: 'filler_name',author: 'john green',price: 10.00, published_date: '2099-01-01')
+  	described_class.new(title: 'filler_name',author: 'john green',price: 10.00, published_date: '2000-01-01')
   end
 
   it 'is valid with valid author' do
@@ -35,7 +35,7 @@ end
 # Unit test for price
 RSpec.describe Book, type: :model do
   subject do	
-  	described_class.new(title: 'filler_name', author: 'filler_name', price: 15.69, published_date: '2099-01-01')
+  	described_class.new(title: 'filler_name', author: 'filler_name', price: 15.69, published_date: '2000-01-01')
   end
 
   it 'is valid with valid price' do

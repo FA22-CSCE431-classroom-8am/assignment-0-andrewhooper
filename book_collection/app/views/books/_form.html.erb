@@ -28,7 +28,7 @@
   <!-- Used this video to format the options into date_select: https://www.youtube.com/watch?v=O1cg7vqnHDE-->
   <div class="field">
     <%= form.label :published_date %>
-    <%= form.date_select :published_date, :use_month_numbers => true, :start_year => 1925 %>
+    <%= form.date_select :published_date, :use_month_numbers => true, :start_year => 2022, :end_year => 1925, :prompt => {year: 'Select year', day: 'Select day', month: 'Select month'}%>
   </div>
 
   <div class="actions">
